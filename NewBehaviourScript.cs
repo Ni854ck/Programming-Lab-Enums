@@ -20,21 +20,6 @@ public class NewBehaviourScript : MonoBehaviour
         StartCoroutine(enemySpawn());
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Tab))
-        {
-            difficulty = Difficulty.Easy;
-        }
-        if (Input.GetKeyDown(KeyCode.LeftShift)) 
-        { 
-            difficulty = Difficulty.Normal; 
-        }
-        if (Input.GetKeyDown(KeyCode.RightShift)) 
-        {
-            difficulty = Difficulty.Hard; 
-        }
-    }
 
     IEnumerator enemySpawn() 
     {
