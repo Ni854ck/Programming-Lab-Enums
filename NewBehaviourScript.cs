@@ -4,16 +4,16 @@ using UnityEngine;
 
 public enum Difficulty
 {
-    Easy,
-    Normal,
-    Hard
+    Easy = 1,
+    Normal = 2,
+    Hard = 4;
 }
 
 public class NewBehaviourScript : MonoBehaviour
 {
     [SerializeField] public Difficulty difficulty;
 
-    [SerializeField] private Rigidbody enemyPrefab;
+    [SerializeField] private Rigidbody enemyPrefab;  
     
     void Start()
     {
