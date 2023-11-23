@@ -20,7 +20,6 @@ public class NewBehaviourScript : MonoBehaviour
         StartCoroutine(enemySpawn());
     }
 
-
     IEnumerator enemySpawn() 
     {
         if (difficulty == Difficulty.Easy)
